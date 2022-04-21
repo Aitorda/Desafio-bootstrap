@@ -1,0 +1,17 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-image: url(https://thumbs.dreamstime.com/b/vista-de-cierre-fondo-papel-creativo-color-marr%C3%B3n-claro-imagen-extra-grande-y-muy-detallada-188862817.jpg);
+}
+header{
+        
+    background-image: URL(https://www.estancia-rquillinzo.com.ar/img/header-background.jpg);
+    margin: .3rem;
+    height: 5.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.logos{
+    text-align: center;
+    font-size: 40px;
+}

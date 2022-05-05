@@ -1,0 +1,93 @@
+/*mixxin*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(https://thumbs.dreamstime.com/b/vista-de-cierre-fondo-papel-creativo-color-marr%C3%B3n-claro-imagen-extra-grande-y-muy-detallada-188862817.jpg); }
+
+header {
+  margin: .3rem;
+  height: 5.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+.logos {
+  text-align: center;
+  font-size: 40px; }
+
+.card:hover {
+  transform: scale(1.01, 1.01);
+  transition: all 1s; }
+
+.logos {
+  transition: all 1s; }
+
+.bi-facebook:hover {
+  opacity: 0.5;
+  border-radius: 30px; }
+
+.bi-instagram:hover {
+  opacity: 0.5;
+  border-radius: 30px; }
+
+.bi-whatsapp:hover {
+  opacity: 0.5;
+  border-radius: 30px; }
+
+.galeria {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  border: 5px #d4d1d1 double;
+  background-image: url(https://www.estancia-rquillinzo.com.ar/img/galeria-background.jpg); }
+  .galeria img {
+    width: 150px;
+    height: 100px; }
+  .galeria:hover {
+    border: solid #0f0e0e 6px;
+    transition: all 2s;
+    transform: scale(1.5, 1.5); }
+
+/*contenedor galeria*/
+.contenedor {
+  max-width: 1200px;
+  margin: 2rem auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 60px;
+  grid-template-areas: "A1 A2" "A3 A4"; }
+
+.galeria {
+  width: 100%; }
+
+/*grid item hijo*/
+.A1 {
+  grid-area: A1;
+  width: 100%; }
+
+.A2 {
+  grid-area: A2; }
+
+.A3 {
+  grid-area: A3; }
+
+.A4 {
+  grid-area: A4; }
+
+@media (max-width: 500px) {
+  .contenedor {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas: "A1" "A2" "A3" "A4"; } }
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  text-align: center; }
+
+.navbar-expand {
+  background-image: url(../img/header-background.jpg);
+  border: none; }

@@ -1,0 +1,139 @@
+/*mixxin*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(https://thumbs.dreamstime.com/b/vista-de-cierre-fondo-papel-creativo-color-marr%C3%B3n-claro-imagen-extra-grande-y-muy-detallada-188862817.jpg);
+}
+
+header {
+  margin: .3rem;
+  height: 5.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logos {
+  text-align: center;
+  font-size: 40px;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.logos {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.bi-facebook:hover {
+  opacity: 0.5;
+  border-radius: 30px;
+}
+
+.bi-instagram:hover {
+  opacity: 0.5;
+  border-radius: 30px;
+}
+
+.bi-whatsapp:hover {
+  opacity: 0.5;
+  border-radius: 30px;
+}
+
+.galeria {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px #d4d1d1 double;
+  background-image: url(https://www.estancia-rquillinzo.com.ar/img/galeria-background.jpg);
+}
+
+.galeria img {
+  width: 150px;
+  height: 100px;
+}
+
+.galeria:hover {
+  border: solid #0f0e0e 6px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+/*contenedor galeria*/
+.contenedor {
+  max-width: 1200px;
+  margin: 2rem auto;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 60px;
+      grid-template-areas: "A1 A2" "A3 A4";
+}
+
+.galeria {
+  width: 100%;
+}
+
+/*grid item hijo*/
+.A1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: A1;
+  width: 100%;
+}
+
+.A2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: A2;
+}
+
+.A3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: A3;
+}
+
+.A4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: A4;
+}
+
+@media (max-width: 500px) {
+  .contenedor {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+        grid-template-areas: "A1" "A2" "A3" "A4";
+  }
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+
+.navbar-expand {
+  background-image: url(../img/header-background.jpg);
+  border: none;
+}
+/*# sourceMappingURL=estilo.css.map */
